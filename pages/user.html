@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fav Icon -->
+    <link rel="icon" href="https://e-jurnal-one.vercel.app/assets/img/logo.png">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Font Family -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Main css file -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- css file -->
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>User</title>
+</head>
+
+<body>
+
+    <main class="flex">
+
+        <aside id="aside" class="min-w-[340px] absolute md:static bg-white shadow-2xl min-h-screen">
+            <ul class="nav-menu">
+
+                <li
+                    class="w-full bg-white font-medium hover:border border border-transparent p-3 text-lg rounded-sm cursor-pointer hover:bg-indigo-50 text-[#4154f1] hover:text-[#012970]">
+                    <a href="./category.html">
+                        <i class="bi bi-menu-down text-lg"></i>
+                        <span>Category</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full bg-white font-medium hover:border items-baseline border border-transparent p-3 text-lg rounded-sm cursor-pointer hover:bg-indigo-50 text-[#4154f1] hover:text-[#012970]">
+                    <a href="./topic.html">
+                        <i class="bi bi-list-check text-xl"></i>
+                        <span>Topic</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full bg-white font-medium hover:border border border-transparent p-3 text-lg rounded-sm cursor-pointer hover:bg-indigo-50 text-[#4154f1] hover:text-[#012970]">
+                    <a href="./popular-topic.html">
+                        <i class="bi bi-journal-check"></i>
+                        <span>Popular Topic</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full bg-white font-medium hover:border border border-transparent p-3 text-lg rounded-sm cursor-pointer hover:bg-indigo-50 text-[#4154f1] hover:text-[#012970]">
+                    <a href="./course.html">
+                        <i class="bi bi-book"></i>
+                        <span>Course</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full bg-white font-medium hover:border border border-transparent p-3 text-lg rounded-sm cursor-pointer hover:bg-indigo-50 text-[#4154f1] hover:text-[#012970]">
+                    <a href="./auther.html">
+                        <i class="bi bi-person-gear text-lg"></i>
+                        <span>Auther</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full bg-white font-medium hover:border border border-transparent p-3 text-lg rounded-sm cursor-pointer hover:bg-indigo-50 text-[#4154f1] hover:text-[#012970]">
+                    <a href="./admin.html">
+                        <i class="bi bi-person-circle"></i>
+                        <span>Admin</span>
+                    </a>
+                </li>
+
+                <li
+                    class="w-full bg-white font-medium hover:border border border-transparent p-3 text-lg rounded-sm cursor-pointer hover:bg-indigo-50 text-[#4154f1] hover:text-[#012970]">
+                    <a href="./user.html">
+                        <i class="bi bi-people-fill"></i>
+                        <span>User</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+
+        <section id="main" class="w-full">
+            <div class="w-full shadow-2xl">
+                <ul class="flex justify-between text-indigo-600 ">
+                    <li
+                        class="py-3 px-5 font-medium hover:border border border-transparent hover:bg-indigo-50 hover:text-indigo-800 cursor-pointer">
+                        <a href="../all/user/create.html">UserCreate</a>
+                    </li>
+
+                    <li
+                        class="py-3 px-5 font-medium hover:border border border-transparent hover:bg-indigo-50 hover:text-indigo-800 cursor-pointer">
+                        <a href="../all/user/update.html">UserUpdate</a>
+                    </li>
+
+                    <li
+                        class="py-3 px-5 font-medium hover:border border border-transparent hover:bg-indigo-50 hover:text-indigo-800 cursor-pointer">
+                        <a href="../all/user/getAll.html">UserGetAll</a>
+                    </li>
+
+                    <li
+                        class="py-3 px-5 font-medium hover:border border border-transparent hover:bg-indigo-50 hover:text-indigo-800 cursor-pointer">
+                        <a href="../all/user/getById.html">UserGetById</a>
+                    </li>
+
+                    <li
+                        class="py-3 px-5 font-medium hover:border border border-transparent hover:bg-indigo-50 hover:text-indigo-800 cursor-pointer">
+                        <a href="../all/user/delete.html">UserDelete</a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+
+
+</body>
+
+</html>

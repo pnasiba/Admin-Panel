@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fav Icon -->
+    <link rel="icon" href="https://e-jurnal-one.vercel.app/assets/img/logo.png">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Font Family -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Main css file -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- css file -->
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Course Get By Id</title>
+</head>
+
+<body>
+
+    <main class="flex">
+
+        <aside id="aside" class="min-w-[340px] absolute md:static bg-white shadow-xl min-h-screen">
+            <ul class="nav-menu">
+
+                <li
+                    class="w-full bg-white font-medium hover:border border border-transparent p-3 text-lg rounded-sm cursor-pointer hover:bg-indigo-50 text-[#4154f1] hover:text-[#012970]">
+                    <a href="../../pages/category.html">
+                        <i class="bi bi-menu-down text-lg"></i>
+                        <span>Category</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full bg-white font-medium hover:border items-baseline border border-transparent p-3 text-lg rounded-sm cursor-pointer hover:bg-indigo-50 text-[#4154f1] hover:text-[#012970]">
+                    <a href="../../pages/topic.html">
+                        <i class="bi bi-list-check text-xl"></i>
+                        <span>Topic</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full bg-white font-medium hover:border border border-transparent p-3 text-lg rounded-sm cursor-pointer hover:bg-indigo-50 text-[#4154f1] hover:text-[#012970]">
+                    <a href="../../pages/popular-topic.html">
+                        <i class="bi bi-journal-check"></i>
+                        <span>Popular Topic</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full bg-white font-medium hover:border border border-transparent p-3 text-lg rounded-sm cursor-pointer hover:bg-indigo-50 text-[#4154f1] hover:text-[#012970]">
+                    <a href="../../pages/course.html">
+                        <i class="bi bi-book"></i>
+                        <span>Course</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full bg-white font-medium hover:border border border-transparent p-3 text-lg rounded-sm cursor-pointer hover:bg-indigo-50 text-[#4154f1] hover:text-[#012970]">
+                    <a href="../../pages/auther.html">
+                        <i class="bi bi-person-gear text-xl"></i>
+                        <span>Auther</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full bg-white font-medium hover:border border border-transparent p-3 text-lg rounded-sm cursor-pointer hover:bg-indigo-50 text-[#4154f1] hover:text-[#012970]">
+                    <a href="../../pages/admin.html">
+                        <i class="bi bi-person-circle"></i>
+                        <span>Admin</span>
+                    </a>
+                </li>
+
+                <li
+                    class="w-full bg-white font-medium hover:border border border-transparent p-3 text-lg rounded-sm cursor-pointer hover:bg-indigo-50 text-[#4154f1] hover:text-[#012970]">
+                    <a href="../../pages/user.html">
+                        <i class="bi bi-people-fill"></i>
+                        <span>User</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+
+        <section id="main" class="w-full">
+            <div class="w-full shadow-md">
+                <ul class="flex justify-between text-indigo-600 ">
+                    <li
+                        class="py-3 px-5 font-medium hover:border border border-transparent hover:bg-indigo-50 hover:text-indigo-800 cursor-pointer">
+                        <a href="./create.html">CourseCreate</a>
+                    </li>
+
+                    <li
+                        class="py-3 px-5 font-medium hover:border border border-transparent hover:bg-indigo-50 hover:text-indigo-800 cursor-pointer">
+                        <a href="./update.html">CourseUpdate</a>
+                    </li>
+
+                    <li
+                        class="py-3 px-5 font-medium hover:border border border-transparent hover:bg-indigo-50 hover:text-indigo-800 cursor-pointer">
+                        <a href="./getAll.html">CourseGetAll</a>
+                    </li>
+
+                    <li
+                        class="py-3 px-5 font-medium hover:border border border-transparent hover:bg-indigo-50 hover:text-indigo-800 cursor-pointer">
+                        <a href="./getById.html">CourseGetById</a>
+                    </li>
+
+                    <li
+                        class="py-3 px-5 font-medium hover:border border border-transparent hover:bg-indigo-50 hover:text-indigo-800 cursor-pointer">
+                        <a href="./delete.html">CourseDelete</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="w-[1100px] shadow-lg m-auto mt-20 rounded-md p-5">
+                <h1 class="text-center mb-8 font-medium text-3xl">Get By Id</h1>
+                <div class="flex items-center gap-3 mb-8">
+                    <input type="number" placeholder="Enter id" class=" outline-none border rounded-md p-2 w-[800px]">
+                    <button class="font-medium text-white bg-green-700 hover:bg-green-900 rounded-md p-2 w-[250px]">Find
+                        User</button>
+                </div>
+
+                <div class="mb-7">
+                    <div class="flex justify-between font-bold text-lg">
+                        <h6>Name</h6>
+                        <h6>PhoneNumber</h6>
+                        <h6>Email</h6>
+                        <h6>Password</h6>
+                    </div>
+                    <hr>
+                    <div class="flex justify-between py-2 border-b-[1px] text-[15px]">
+                        <p>Elyorbek</p>
+                        <p>+998909997700</p>
+                        <p>elyorbek@gmail.com</p>
+                        <p>usKUo290</p>
+                    </div>
+
+                    <div class="flex justify-between py-2 border-b-[1px] text-[15px]">
+                        <p>Mubinaxon</p>
+                        <p>+998909997700</p>
+                        <p>mubinaxon@gmail.com</p>
+                        <p>ytuyiIOGT987</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+        </section>
+    </main>
+
+
+
+
+</body>
+
+</html>
